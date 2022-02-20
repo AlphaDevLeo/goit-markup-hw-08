@@ -26,6 +26,7 @@
 		&:hover,
 		&:focus {
 			border: 1px solid $brand-clr;
+			outline: none;
 		}
 	}
 	&__icon {
