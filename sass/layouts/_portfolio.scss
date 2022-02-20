@@ -1,0 +1,114 @@
+.portfolio-section {
+	@extend %standard-section;
+	&__title {
+		@extend %visually-hidden;
+	}
+	&__container {
+		@extend .container;
+	}
+	&__filter {
+		@extend %horisontal-orientation;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+	&__grid {
+		@extend %horisontal-orientation;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin-left: -30px;
+		margin-bottom: -30px;
+	}
+}
+
+.filter {
+	&__item:not(:last-child) {
+		margin-right: 8px;
+	}
+	&__button {
+		padding: 6px 22px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.62;
+		letter-spacing: 0.03em;
+		color: $contrast-clr;
+		background-color: $nuance-clr;
+		transition: background-color $time $curv, box-shadow $time $curv, color $time $curv;
+		&:hover,
+		&:focus {
+			color: $white-clr;
+			background-color: $brand-clr;
+			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+				0px 2px 2px rgba(0, 0, 0, 0.12);
+		}
+	}
+}
+
+.project {
+	&__item {
+		width: calc(100% / $column-project - 30px);
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
+	&__link {
+		flex-direction: column;
+		align-items: stretch;
+		transition: box-shadow $time $curv;
+		&:hover,
+		&:focus {
+			box-shadow: 0px 4px 4px $shadow-clr;
+			outline: none;
+			& .project__overlay {
+				transform: translateY(0);
+			}
+		}
+	}
+	&__interactive {
+		position: relative;
+		overflow: hidden;
+	}
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+	&__overlay {
+		@extend %centered;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $brand-clr;
+		opacity: 0.9;
+		font-size: 18px;
+		line-height: 1.56;
+		letter-spacing: 0.03em;
+		padding: 0 24px;
+		transform: translateY(101%);
+		transition: transform $time $curv;
+	}
+	&__description {
+		color: $white-clr;
+	}
+	&__meta {
+		padding: 20px 24px;
+		background: $white-clr;
+		border-top: none;
+		border-bottom: 1px solid $activity-bgd;
+		border-left: 1px solid $activity-bgd;
+		border-right: 1px solid $activity-bgd;
+	}
+	&__name {
+		margin-bottom: 4px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+		letter-spacing: 0.06em;
+		color: $contrast-clr;
+	}
+	&__type {
+		font-size: 16px;
+		line-height: 1.87;
+		letter-spacing: 0.03em;
+		color: $txt-clr;
+	}
+}

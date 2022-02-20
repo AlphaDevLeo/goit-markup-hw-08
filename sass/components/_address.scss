@@ -1,0 +1,17 @@
+.address {
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	&__item:not(:last-child) {
+		margin-bottom: 9px;
+	}
+	&__link {
+		color: $transparent-clr;
+		&:hover,
+		&:focus {
+			color: $brand-clr;
+		}
+		&--light {
+			color: $white-clr;
+		}
+	}
+}

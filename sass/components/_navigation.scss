@@ -1,0 +1,35 @@
+.navigation {
+	&__list {
+		@extend %horisontal-orientation;
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+	&__item:not(:last-child) {
+		margin-right: 50px;
+	}
+	&__link {
+		font-weight: 500;
+		line-height: 1.14;
+		letter-spacing: 0.02em;
+		color: $contrast-clr;
+		padding: 32px 0;
+		&:hover,
+		&:focus {
+			color: $brand-clr;
+		}
+		&--current {
+			color: $brand-clr;
+			position: relative;
+			&::after {
+				content: '';
+				width: 100%;
+				height: 4px;
+				border-radius: 2px;
+				background-color: $brand-clr;
+				position: absolute;
+				bottom: 0;
+			}
+		}
+	}
+}

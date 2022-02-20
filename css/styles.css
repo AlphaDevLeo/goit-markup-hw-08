@@ -1,0 +1,30 @@
+/* +++++++++++++++++++++++++++
+
+
+/* .benefits::before {
+  display: block;
+  margin-bottom: 30px;
+  content: '';
+  height: 120px;
+    background-color: var(--nuance-clr);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px;
+  border-radius: 4px;
+} */
+
+/* .benefits:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.benefits:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.benefits:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.benefits:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+} */

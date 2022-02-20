@@ -1,0 +1,24 @@
+.header-section {
+	border-bottom: solid 1px $border-clr;
+	background-color: $white-clr;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	z-index: 2;
+	&__container {
+		@extend .container;
+		@extend %horisontal-orientation;
+	}
+	&__logo {
+		padding-top: 24px;
+		padding-bottom: 25px;
+		margin-right: 93px;
+	}
+	// &__navigation {
+	// }
+	&__contacts {
+		@extend %horisontal-orientation;
+		margin-left: auto;
+	}
+}

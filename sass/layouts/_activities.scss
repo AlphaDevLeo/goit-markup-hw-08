@@ -1,0 +1,29 @@
+.activities-section {
+	@extend %standard-section;
+	&__container {
+		@extend .container;
+	}
+	&__title {
+		@include section-title();
+	}
+	&__list {
+		@extend %horisontal-orientation;
+	}
+	&__item {
+		position: relative;
+		overflow: hidden;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__overlay {
+		@extend %centered;
+		@include section-subtitle();
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 70px;
+		background: rgba(47, 48, 58, 0.8);
+		margin-bottom: 0;
+	}
+}

@@ -1,0 +1,26 @@
+// color
+$brand-clr: rgb(33, 150, 243);
+$white-clr: #ffffff;
+$transparent-clr: rgba(255, 255, 255, 0.6);
+$nuance-clr: #f5f4fa;
+$activity-bgd: #eeeeee;
+$border-clr: #ececec;
+$overlay-hero: rgba(47, 48, 58, 0.4);
+$txt-clr: #757575;
+$sub-hero: #c4c4c4;
+$footer-clr: #2f303a;
+$contrast-clr: #212121;
+$black-clr: #000000;
+$shadow-clr: rgba(0, 0, 0, 0.25);
+$shadow-light-clr: rgba(0, 0, 0, 0.2);
+$client-border-clr: #afb1b8;
+$column-project: 3;
+$icon-bg-clr: rgba(255, 255, 255, 0.1);
+
+// padding
+$section-gap: 94px;
+
+// transition
+//  $time $curv
+$time: 300ms;
+$curv: cubic-bezier(0.4, 0, 0.2, 1);

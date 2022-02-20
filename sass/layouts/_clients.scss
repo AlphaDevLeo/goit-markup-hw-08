@@ -1,0 +1,41 @@
+.clients-section {
+	@extend %standard-section;
+	&__container {
+		@extend .container;
+	}
+	&__title {
+		@include section-title();
+	}
+	&__list {
+		@extend %horisontal-orientation;
+	}
+	&__item {
+		width: 170px;
+		height: 92px;
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__link {
+		@extend %centered;
+		width: 100%;
+		height: 100%;
+		border-radius: 4px;
+		border: 1px solid $client-border-clr;
+		transition: border $time $curv;
+		&:hover,
+		&:focus {
+			border: 1px solid $brand-clr;
+		}
+	}
+	&__icon {
+		width: 106px;
+		height: 60px;
+		fill: $client-border-clr;
+		transition: fill $time $curv;
+		.clients-section__item:hover &,
+		.clients-section__link:focus & {
+			fill: $brand-clr;
+		}
+	}
+}

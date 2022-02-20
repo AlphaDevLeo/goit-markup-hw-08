@@ -1,0 +1,13 @@
+.team-section {
+	background-color: $nuance-clr;
+	@extend %standard-section;
+	&__container {
+		@extend .container;
+	}
+	&__title {
+		@include section-title();
+	}
+	&__list {
+		@extend %horisontal-orientation;
+	}
+}

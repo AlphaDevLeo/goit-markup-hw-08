@@ -1,0 +1,39 @@
+.social {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	&--left {
+		justify-content: flex-start;
+	}
+	&__item:not(:last-child) {
+		margin-right: 10px;
+	}
+	&__link {
+		@extend %centered;
+		width: 44px;
+		height: 44px;
+		border-radius: 50%;
+		transition: background-color $time $curv;
+		&:hover,
+		&:focus {
+			background-color: $brand-clr;
+			outline: none;
+		}
+		&--dark-bg {
+			background-color: $icon-bg-clr;
+		}
+	}
+	&__icon {
+		width: 20px;
+		height: 20px;
+		transition: fill $time $curv;
+		fill: $client-border-clr;
+		.social__link:hover &,
+		.social__link:focus & {
+			fill: $white-clr;
+		}
+		&--dark-bg {
+			fill: $white-clr;
+		}
+	}
+}

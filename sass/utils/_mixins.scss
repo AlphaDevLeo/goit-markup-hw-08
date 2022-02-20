@@ -1,0 +1,58 @@
+// %шаблон
+
+// класс {
+// @exctend %шаблон;
+// }
+
+// block
+// block-name
+
+// block__element
+// block-name__element
+// block__element-name
+// block-name__element-name
+
+// block__element--modificator
+// block-name__element--modificator
+
+// first-block (внутренние свойства блока родителя)
+//   sub-block--header (внутренние свойства блока потомка) first-block__sub-block (внешние свойства блока потомка)
+
+/* Задаём базовую ширину адаптивного контейнера */
+// .container.adaptive {
+//   max-width: 320px;
+// }
+
+// @media screen and (min-width: 600px) {
+//   .container.adaptive {
+//     max-width: 480px;
+//   }
+// }
+
+// @media screen and (min-width: 900px) {
+//   .container.adaptive {
+//     max-width: 768px;
+//   }
+// }
+
+// @media screen and (min-width: 1140px) {
+//   .container.adaptive {
+//     max-width: 1200px;
+//   }
+// }
+
+// .element {
+// 	/* Базовые стили */
+// }
+
+// @media screen and (min-width: ширина-планшета) {
+// 	.element {
+// 		/* Стили планшета */
+// 	}
+// }
+
+// @media screen and (min-width: ширина-десктопа) {
+// 	.element {
+// 		/* Стили десктопа */
+// 	}
+// }
