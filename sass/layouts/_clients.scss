@@ -1,19 +1,35 @@
 .clients-section {
-	@extend %standard-section;
+	@extend %standard-section-mobile;
+	@include desktop {
+		padding: $section-gap 0;
+	}
 	&__container {
 		@extend .container;
 	}
 	&__title {
-		@include section-title();
+		@include section-title-mobile();
+		@include desktop {
+			@include section-title();
+		}
 	}
 	&__list {
 		@extend %horisontal-orientation;
+		flex-wrap: wrap;
+		margin-bottom: -30px;
+		margin-right: -30px;
 	}
 	&__item {
-		width: 170px;
 		height: 92px;
-		&:not(:last-child) {
-			margin-right: 30px;
+		margin-bottom: 30px;
+		margin-right: 30px;
+		@include mobile {
+			width: calc(100% / 2 - 30px);
+		}
+		@include tablet {
+			width: calc(100% / 3 - 30px);
+		}
+		@include desktop {
+			width: calc(100% / 6 - 30px);
 		}
 	}
 	&__link {

@@ -36,15 +36,7 @@
 		top: 8px;
 	}
 	&__title {
-		@include section-title(
-			$fw: 700,
-			$fz: 20px,
-			$lh: 1.15,
-			$ls: 0.03em,
-			$ta: center,
-			$mb: 12px,
-			$clr: $contrast-clr
-		);
+		@include section-title-modal;
 	}
 	&__field {
 		margin-bottom: 10px;

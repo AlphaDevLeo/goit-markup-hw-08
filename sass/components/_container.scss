@@ -1,5 +1,36 @@
 .container {
-	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
+	@include mobile {
+		width: $mobile;
+	}
+	@include tablet {
+		width: $tablet;
+	}
+	@include desktop {
+		width: $desktop;
+	}
 }
+
+// @media screen and (min-width: $mobile) {
+// 	.container {
+// 		max-width: $mobile;
+// 	}
+// }
+// @media screen and (min-width: $tablet) {
+// 	.container {
+// 		max-width: $tablet;
+// 	}
+// }
+// @media screen and (min-width: $desktop) {
+// 	.container {
+// 		max-width: $desktop;
+// 	}
+// }
+
+// @media screen and (min-width: $mobile) {
+// }
+// @media screen and (min-width: $tablet) {
+// }
+// @media screen and (min-width: $desktop) {
+// }

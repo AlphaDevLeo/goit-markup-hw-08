@@ -5,6 +5,15 @@ body {
 	font-size: 14px;
 	color: #757575;
 	background-color: #ffffff;
+	@media screen and (min-width: $mobile) {
+		background-color: #ff00002a;
+	}
+	@media screen and (min-width: $tablet) {
+		background-color: #fbff002a;
+	}
+	@media screen and (min-width: $desktop) {
+		background-color: #1100ff2a;
+	}
 }
 
 a {

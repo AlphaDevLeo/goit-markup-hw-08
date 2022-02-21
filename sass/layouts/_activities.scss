@@ -1,5 +1,9 @@
 .activities-section {
-	@extend %standard-section;
+	display: none;
+	@include desktop {
+		display: block;
+		padding: $section-gap 0;
+	}
 	&__container {
 		@extend .container;
 	}

@@ -1,58 +1,93 @@
-// %шаблон
+// АДАПТИВ
 
-// класс {
-// @exctend %шаблон;
-// }
+@mixin mobile {
+	@media screen and (min-width: $mobile) {
+		@content;
+	}
+}
 
-// block
-// block-name
+@mixin tablet {
+	@media screen and (min-width: $tablet) {
+		@content;
+	}
+}
 
-// block__element
-// block-name__element
-// block__element-name
-// block-name__element-name
+@mixin desktop {
+	@media screen and (min-width: $desktop) {
+		@content;
+	}
+}
 
-// block__element--modificator
-// block-name__element--modificator
+// ЗАГОЛОВКИ
 
-// first-block (внутренние свойства блока родителя)
-//   sub-block--header (внутренние свойства блока потомка) first-block__sub-block (внешние свойства блока потомка)
+@mixin section-title(
+	$fw: 700,
+	$fz: 36px,
+	$lh: 1.17,
+	$ls: 0.03em,
+	$ta: center,
+	$mb: 50px,
+	$clr: $contrast-clr
+) {
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	letter-spacing: $ls;
+	text-align: $ta;
+	margin-bottom: $mb;
+	color: $clr;
+}
 
-/* Задаём базовую ширину адаптивного контейнера */
-// .container.adaptive {
-//   max-width: 320px;
-// }
+@mixin section-title-mobile(
+	$fw: 700,
+	$fz: 28px,
+	$lh: 1.18,
+	$ls: 0.03em,
+	$ta: center,
+	$mb: 30px,
+	$clr: $contrast-clr
+) {
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	letter-spacing: $ls;
+	text-align: $ta;
+	margin-bottom: $mb;
+	color: $clr;
+}
 
-// @media screen and (min-width: 600px) {
-//   .container.adaptive {
-//     max-width: 480px;
-//   }
-// }
+@mixin section-subtitle(
+	$fw: 700,
+	$fz: 14px,
+	$lh: 1.14,
+	$ls: 0.03em,
+	$tt: uppercase,
+	$mb: 20px,
+	$clr: $white-clr
+) {
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	letter-spacing: $ls;
+	text-transform: $tt;
+	margin-bottom: $mb;
+	color: $clr;
+}
 
-// @media screen and (min-width: 900px) {
-//   .container.adaptive {
-//     max-width: 768px;
-//   }
-// }
-
-// @media screen and (min-width: 1140px) {
-//   .container.adaptive {
-//     max-width: 1200px;
-//   }
-// }
-
-// .element {
-// 	/* Базовые стили */
-// }
-
-// @media screen and (min-width: ширина-планшета) {
-// 	.element {
-// 		/* Стили планшета */
-// 	}
-// }
-
-// @media screen and (min-width: ширина-десктопа) {
-// 	.element {
-// 		/* Стили десктопа */
-// 	}
-// }
+@mixin section-title-modal(
+	$fw: 700,
+	$fz: 20px,
+	$lh: 1.15,
+	$ls: 0.03em,
+	$ta: center,
+	$mb: 12px,
+	$clr: $contrast-clr
+) {
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	letter-spacing: $ls;
+	text-align: $ta;
+	margin-bottom: $mb;
+	color: $clr;
+}

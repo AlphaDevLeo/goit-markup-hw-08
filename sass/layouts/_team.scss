@@ -1,13 +1,24 @@
 .team-section {
 	background-color: $nuance-clr;
-	@extend %standard-section;
+	@extend %standard-section-mobile;
+	@include desktop {
+		padding: $section-gap 0;
+	}
 	&__container {
 		@extend .container;
 	}
 	&__title {
-		@include section-title();
+		@include section-title-mobile();
+		@include desktop {
+			@include section-title();
+		}
 	}
 	&__list {
-		@extend %horisontal-orientation;
+		margin-bottom: -30px;
+		@include tablet {
+			display: flex;
+			flex-wrap: wrap;
+			margin-right: -30px;
+		}
 	}
 }

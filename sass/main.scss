@@ -1,14 +1,22 @@
 @import './utils/variables';
+@import './utils/breakpoints';
+
+@import './utils/placeholders';
+@import './utils/mixins';
+
 @import './base/reset';
 @import './base/common';
 
 @import './components/address';
+@import './components/benefit';
 @import './components/btn';
 @import './components/contact';
 @import './components/container';
 @import './components/employee';
+@import './components/filter';
 @import './components/logo';
 @import './components/navigation';
+@import './components/project';
 @import './components/socials';
 @import './components/subscribe';
 @import './components/title';
@@ -22,6 +30,3 @@
 @import './layouts/modal';
 @import './layouts/portfolio';
 @import './layouts/team';
-
-@import './utils/mixins';
-@import './utils/placeholders';

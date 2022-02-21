@@ -23,7 +23,12 @@
 	margin: -1px;
 }
 
+// после задания паддингов всех секций удалить.
 %standard-section {
-	padding-top: $section-gap;
-	padding-bottom: $section-gap;
+	padding: $section-gap 0;
+}
+//
+
+%standard-section-mobile {
+	padding: $section-gap-mobile 0;
 }
