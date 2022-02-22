@@ -4,9 +4,6 @@
 		display: block;
 		padding: $section-gap 0;
 	}
-	&__container {
-		@extend .container;
-	}
 	&__title {
 		@include section-title();
 	}

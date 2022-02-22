@@ -3,9 +3,6 @@
 	@include desktop {
 		padding: $section-gap 0;
 	}
-	&__container {
-		@extend .container;
-	}
 	&__title {
 		@include section-title-mobile();
 		@include desktop {

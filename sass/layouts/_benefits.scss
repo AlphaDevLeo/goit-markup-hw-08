@@ -4,9 +4,6 @@
 		padding-top: $section-gap;
 		padding-bottom: 0;
 	}
-	&__container {
-		@extend .container;
-	}
 	&__title {
 		@extend %visually-hidden;
 	}

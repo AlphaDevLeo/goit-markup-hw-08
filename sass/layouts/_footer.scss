@@ -2,7 +2,6 @@
 	padding: 60px 0px;
 	background-color: $footer-clr;
 	&__container {
-		@extend .container;
 		text-align: center;
 		@include tablet {
 			display: flex;

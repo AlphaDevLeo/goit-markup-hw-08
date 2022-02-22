@@ -7,7 +7,6 @@
 	width: 100%;
 	z-index: 2;
 	&__container {
-		@extend .container;
 		@extend %horisontal-orientation;
 		@include tablet {
 			justify-content: space-between;
