@@ -79,3 +79,27 @@ button {
 		}
 	}
 }
+
+.menu-open-btn,
+.menu-close-btn {
+	background-color: transparent;
+	&__icon {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.menu-close-btn__icon {
+	fill: $contrast-clr;
+	transition: fill $time $curv;
+	&:hover {
+		fill: $brand-clr;
+	}
+}
+
+.menu-open-btn__icon {
+	transition: fill $time $curv;
+	&:hover {
+		fill: $brand-clr;
+	}
+}

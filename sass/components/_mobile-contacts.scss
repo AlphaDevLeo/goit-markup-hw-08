@@ -1,0 +1,20 @@
+.mobile-contacts {
+	// &__list {}
+	&__item:first-child {
+		margin-bottom: 32px;
+	}
+	&__link {
+		font-weight: 500;
+		letter-spacing: 0.02em;
+		.mobile-contacts__item:first-child & {
+			font-size: 34px;
+			line-height: 1.18;
+			color: $brand-clr;
+		}
+		.mobile-contacts__item:last-child & {
+			font-size: 24px;
+			line-height: 1.17;
+			color: $txt-clr;
+		}
+	}
+}

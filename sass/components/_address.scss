@@ -2,7 +2,10 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	&__item:not(:last-child) {
-		margin-bottom: 9px;
+		margin-bottom: 8px;
+		@include desktop {
+			margin-bottom: 9px;
+		}
 	}
 	&__link {
 		color: $transparent-clr;

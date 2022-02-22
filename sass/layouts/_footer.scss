@@ -3,25 +3,44 @@
 	background-color: $footer-clr;
 	&__container {
 		@extend .container;
-		display: flex;
-		flex-direction: row;
-		align-items: baseline;
+		text-align: center;
+		@include tablet {
+			display: flex;
+			align-items: baseline;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+		@include desktop {
+			text-align: left;
+		}
 	}
 	&__contacts,
 	&__social {
-		width: calc((100% + 30px) / 4 - 30px);
-		margin-left: 0;
-		margin-right: 30px;
+		margin-bottom: 60px;
+		@include tablet {
+			// margin-right: 30px;
+			width: calc(50% - 30px);
+		}
+		@include desktop {
+			width: calc((100% + 30px) / 4 - 30px);
+			margin-bottom: 0;
+		}
 	}
 	&__subscribe {
-		width: calc((100% + 30px) / 2 - 30px);
-		margin-right: 0;
+		@include tablet {
+			width: 450px;
+		}
+		@include desktop {
+			width: calc((100% + 30px) / 2 - 30px);
+			margin-right: 0;
+		}
 	}
 	&__logo {
 		margin-bottom: 20px;
 	}
 	&__social-title,
 	&__subscribe-title {
+		margin-bottom: 20px;
 		@include section-subtitle();
 	}
 }

@@ -9,16 +9,38 @@
 	&__container {
 		@extend .container;
 		@extend %horisontal-orientation;
+		@include tablet {
+			justify-content: space-between;
+		}
 	}
 	&__logo {
-		padding-top: 24px;
-		padding-bottom: 25px;
-		margin-right: 93px;
+		@include desktop {
+			margin-right: 93px;
+		}
 	}
-	// &__navigation {
-	// }
+	&__navigation {
+		display: none;
+		@include tablet {
+			display: flex;
+		}
+	}
 	&__contacts {
-		@extend %horisontal-orientation;
+		display: none;
+		@include tablet {
+			display: block;
+			padding: 16px 0;
+		}
+		@include desktop {
+			padding: 0;
+			display: flex;
+			margin-left: auto;
+		}
+	}
+	&__button {
+		padding: 10px 0;
 		margin-left: auto;
+		@include tablet {
+			display: none;
+		}
 	}
 }

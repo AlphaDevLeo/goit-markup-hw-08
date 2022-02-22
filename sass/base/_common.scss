@@ -5,15 +5,18 @@ body {
 	font-size: 14px;
 	color: #757575;
 	background-color: #ffffff;
-	@media screen and (min-width: $mobile) {
-		background-color: #ff00002a;
-	}
-	@media screen and (min-width: $tablet) {
-		background-color: #fbff002a;
-	}
-	@media screen and (min-width: $desktop) {
-		background-color: #1100ff2a;
-	}
+	// @media screen and (min-width: $mobile) {
+	// 	background-color: #ff00002a;
+	// }
+	// @media screen and (min-width: $tablet) {
+	// 	background-color: #fbff002a;
+	// }
+	// @media screen and (min-width: $desktop) {
+	// 	background-color: #1100ff2a;
+	// }
+	// & * {
+	// 	outline: 1px dashed tomato;
+	// }
 }
 
 a {
@@ -29,5 +32,8 @@ a {
 main,
 footer {
 	position: relative;
-	top: 80px;
+	top: 60px;
+	@include tablet {
+		top: 80px;
+	}
 }

@@ -1,5 +1,8 @@
 .portfolio-section {
-	@extend %standard-section;
+	padding: $section-gap-mobile 0;
+	@include desktop {
+		padding: $section-gap 0;
+	}
 	&__title {
 		@extend %visually-hidden;
 	}
@@ -7,15 +10,22 @@
 		@extend .container;
 	}
 	&__filter {
-		@extend %horisontal-orientation;
-		justify-content: center;
-		margin-bottom: 50px;
+		margin-bottom: 25px;
+		@include tablet {
+			margin-bottom: 40px;
+			justify-content: center;
+		}
+		@include desktop {
+			margin-bottom: 50px;
+		}
 	}
 	&__grid {
-		@extend %horisontal-orientation;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		margin-left: -30px;
-		margin-bottom: -30px;
+		@include tablet {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+			margin-left: -30px;
+			margin-bottom: -30px;
+		}
 	}
 }
